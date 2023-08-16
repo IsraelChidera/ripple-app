@@ -27,7 +27,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='flex col-span-4 justify-between w-full items-center'>
+            <div className='flex col-span-4 justify-between w-full items-start'>
                 <div>
                     <h4 className='font-bold text-xl text-dark'>Product</h4>
 
@@ -127,18 +127,14 @@ const Footer = () => {
                             <input
                                 style={{ background: "#f2f1f1", borderRadius: "16px" }}
                                 type="text"
-                                className='text-dark px-2 py-1 text-sm'
+                                className='text-dark px-2 py-1.5 text-sm'
                                 placeholder='Your email address'
                             />
 
-                            <img src={sendArrow} alt="send arrow icon" />
+                            <img src={sendArrow} alt="send arrow icon" className='absolute top-2 right-2 text-xs'/>
                         </li>
 
-                        <li>
-                            <NavLink to="#">
-                                Pricing
-                            </NavLink>
-                        </li>
+                       
                     </ul>
                 </div>
             </div>

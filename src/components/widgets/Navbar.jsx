@@ -1,10 +1,17 @@
 import React from 'react';
 import logo from '../assets/logo.svg';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import FilledButton from '../elements/FilledButton';
 import OutlinedButton from '../elements/OutlinedButton';
 
 const Navbar = () => {
+
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate("/dashboard");
+    }
+    
     return (
         <nav className='mx-auto md:w-5/6 flex justify-between items-center py-4'>
             <div className='flex items-center space-x-10'>
@@ -40,7 +47,7 @@ const Navbar = () => {
             </div>
 
             <div className='flex space-x-4'>
-                <OutlinedButton>
+                <OutlinedButton onClick={handleClick}>
                     Log in
                 </OutlinedButton>
 
