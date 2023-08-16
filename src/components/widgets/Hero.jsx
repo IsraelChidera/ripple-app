@@ -13,7 +13,7 @@ const Hero = () => {
                     <div className=''>
                         <h1 className="text-5xl font-bold">
                             <span style={{ color: "#292a29" }}>Run your</span>
-                            <span className="span">&nbsp;</span>
+                            <span>&nbsp;</span>
                             <span className="text-primary">payroll</span>
                             <span style={{ color: "#b4a572" }}>
                                 {" "}
@@ -39,7 +39,7 @@ const Hero = () => {
                     <div className='mt-20'>
                         <p className='text-xs font-bold'>Download the Eazipay App</p>
                         <div className='mt-2 flex items-center space-x-4'>
-                            <div style={{border: "1px none"}} className='bg-white rounded-lg p-2 flex items-center space-x-2'>
+                            <div style={{ border: "1px none" }} className='bg-white rounded-lg p-2 flex items-center space-x-2'>
                                 <img src={appStore} alt="app store icon" />
                                 <div>
                                     <p className='text-xs ' style={{ color: "#515251" }}>Download on the</p>
@@ -47,7 +47,7 @@ const Hero = () => {
                                 </div>
                             </div>
 
-                            <div style={{border: "1px none"}} className='bg-white rounded-lg p-2 flex items-center space-x-2'>
+                            <div style={{ border: "1px none" }} className='bg-white rounded-lg p-2 flex items-center space-x-2'>
                                 <img src={googleplay} alt="app store icon" />
                                 <div>
                                     <p className='text-xs' style={{ color: "#515251" }}>Get in </p>
@@ -64,7 +64,7 @@ const Hero = () => {
             </div>
 
             <div className=''>
-                <img style={{height:"100vh"}} className=' absolute top-0 left-0 w-full z-10' src={gradients} alt="hero gradient" />
+                <img style={{ height: "100vh" }} className=' absolute top-0 left-0 w-full z-10' src={gradients} alt="hero gradient" />
             </div>
         </section>
     )
