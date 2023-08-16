@@ -4,6 +4,8 @@ import Hero from '../components/widgets/Hero'
 import Individuals from '../components/widgets/Individuals'
 import How from '../components/widgets/How'
 import Download from '../components/widgets/Download'
+import { Subscription } from '../components/widgets/Subscription'
+import Footer from '../components/widgets/Footer'
 
 const LandingPage = () => {
     return (
@@ -13,6 +15,8 @@ const LandingPage = () => {
             <Individuals />
             <How />
             <Download />
+            <Subscription />
+            <Footer />
         </div>
     )
 }
