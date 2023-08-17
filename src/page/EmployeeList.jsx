@@ -9,6 +9,7 @@ import filter from '../components/assets/filter.svg';
 import more from '../components/assets/more-2.svg';
 import dashboard from '../components/assets/list-icon.svg';
 import profilePicture from '../components/assets/profile-picture-4.png';
+import BottomNav from '../components/widgets/BottomNav';
 
 const EmployeeList = () => {
 
@@ -147,7 +148,7 @@ const EmployeeList = () => {
 
             </div>
 
-            <BottomNavigation />
+            <BottomNav />
         </section>
     )
 }

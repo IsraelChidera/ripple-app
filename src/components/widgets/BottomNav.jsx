@@ -1,12 +1,12 @@
 import React from 'react'
-import user from '../assets/user-icon.svg';
-import home from '../assets/home-icon.svg';
+import user from '../assets/user-icon-2.svg';
+import home from '../assets/home-icon-2.svg';
 import payroll from '../assets/payroll-icon.svg';
 import loan from '../assets/loan-icon.svg';
 import more from '../assets/more-icon.svg';
 import { NavLink } from 'react-router-dom';
 
-const BottomNavigation = () => {
+const BottomNav = () => {
     return (
         <footer style={{ boxShadow: "0px -8px 12px #656c7d14" }} className='py-6  bg-white  w-full fixed bottom-0 left-0 bg-primary'>
             <div className='flex justify-around items-center'>
@@ -49,4 +49,4 @@ const BottomNavigation = () => {
     )
 }
 
-export default BottomNavigation
+export default BottomNav
