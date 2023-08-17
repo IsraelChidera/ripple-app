@@ -15,11 +15,8 @@ import action6 from '../assets/action-6.svg';
 import action7 from '../assets/action-7.svg';
 import action8 from '../assets/action-8.svg';
 import action9 from '../assets/action-9.svg';
-import user from '../assets/user-icon.svg';
-import home from '../assets/home-icon.svg';
-import payroll from '../assets/payroll-icon.svg';
-import loan from '../assets/loan-icon.svg';
-import more from '../assets/loan-icon.svg';
+import BottomNavigation from './BottomNavigation';
+
 
 const MobileDashboard = () => {
     return (
@@ -160,44 +157,7 @@ const MobileDashboard = () => {
                 </div>
             </div>
 
-            <footer style={{ boxShadow: "0px -8px 12px #656c7d14" }} className='py-6  bg-white  w-full fixed bottom-0 left-0 bg-primary'>
-                <div className='flex justify-around items-center'>
-                    <div className='flex flex-col items-center'>
-                        <img src={home} alt="home icon" />
-                        <p className='text-xs p-1 text-primary'>
-                            Home
-                        </p>
-                    </div>
-
-                    <div className='flex flex-col items-center'>
-                        <img src={user} alt="user icon" />
-                        <p className='text-xs p-1 text-primary'>
-                            Employee
-                        </p>
-                    </div>
-
-                    <div className='flex flex-col items-center'>
-                        <img src={payroll} alt="payroll icon" />
-                        <p className='text-xs p-1 text-primary'>
-                            Payroll
-                        </p>
-                    </div>
-
-                    <div className='flex flex-col items-center'>
-                        <img src={loan} alt="loan icon" />
-                        <p className='text-xs p-1 text-primary'>
-                            Loans
-                        </p>
-                    </div>
-
-                    <div className='flex flex-col items-center'>
-                        <img src={more} alt="more icon" />
-                        <p className='text-xs p-1 text-primary'>
-                            More
-                        </p>
-                    </div>
-                </div>
-            </footer>
+            <BottomNavigation />
         </section>
     )
 }
