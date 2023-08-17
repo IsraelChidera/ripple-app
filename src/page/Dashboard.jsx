@@ -2,16 +2,18 @@ import React from 'react'
 import Sidebar from '../components/widgets/Sidebar'
 import DbNav from '../components/widgets/DbNav'
 import DbProfile from '../components/widgets/DbProfile'
+import RecentActivities from '../components/widgets/RecentActivities'
 
 const Dashboard = () => {
     return (
         <section className='relative'>
             <Sidebar />
 
-            <main style={{ background: "#f9fafc" }} className='h-screen pl-56'>
+            <main style={{ background: "#f9fafc" }} className='pb-20 pl-56'>
                 <DbNav />
-                <div className='mx-auto md:w-5/6'>
+                <div className='mx-auto px-10'>
                     <DbProfile />
+                    <RecentActivities />
                 </div>
 
             </main>
