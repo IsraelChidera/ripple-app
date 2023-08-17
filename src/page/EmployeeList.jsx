@@ -8,6 +8,7 @@ import search from '../components/assets/search.svg';
 import filter from '../components/assets/filter.svg';
 import more from '../components/assets/more-2.svg';
 import dashboard from '../components/assets/list-icon.svg';
+import profilePicture from '../components/assets/profile-picture-4.png';
 
 const EmployeeList = () => {
 
@@ -102,15 +103,43 @@ const EmployeeList = () => {
                     </div>
                 </div>
 
-                <div>
-                    <div>
-                        {/* <img src={profilePicture} alt="profile picture" /> */}
-                        <div>
-                            <h3> Caleb Nwafor</h3>
-                            <p>Accountant</p>
-                            <p>
-                                <span className='border-r-2 pr-2'>Female</span> {" "}
-                                <span>Monthly</span>
+                <div className='mt-10 space-y-4 pb-20'>
+                    <div className='flex justify-between border-b pb-4'>
+                        <div className='flex items-start space-x-2'>
+                            <img src={profilePicture} alt="profile picture" />
+                            <div className='space-y-2'>
+                                <h3 className='text-lg' style={{ color: "#292a29" }}> Caleb Nwafor</h3>
+                                <p className='text-dark text-xs'>Accountant</p>
+                                <p className='text-dark text-xs'>
+                                    <span className='border-r-2 pr-2'>Female</span> {" "}
+                                    <span>Monthly</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className='flex items-end'>
+                            <p className='text-primary font-bold'>
+                                N250,600.78
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className='flex justify-between border-b pb-4'>
+                        <div className='flex items-start space-x-2'>
+                            <img src={profilePicture} alt="profile picture" />
+                            <div className='space-y-2'>
+                                <h3 className='text-lg' style={{ color: "#292a29" }}> Caleb Nwafor</h3>
+                                <p className='text-dark text-xs'>Accountant</p>
+                                <p className='text-dark text-xs'>
+                                    <span className='border-r-2 pr-2'>Female</span> {" "}
+                                    <span>Monthly</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className='flex items-end'>
+                            <p className='text-primary font-bold'>
+                                N250,600.78
                             </p>
                         </div>
                     </div>
