@@ -3,6 +3,7 @@ import logo from '../assets/logo.svg';
 import { NavLink, useNavigate } from 'react-router-dom';
 import FilledButton from '../elements/FilledButton';
 import OutlinedButton from '../elements/OutlinedButton';
+import listIcon from '../assets/list-icon.svg';
 
 const Navbar = () => {
 
@@ -11,15 +12,15 @@ const Navbar = () => {
     const handleClick = () => {
         navigate("/dashboard");
     }
-    
+
     return (
-        <nav className='mx-auto md:w-5/6 flex justify-between items-center py-4'>
+        <nav className='mx-auto md:w-5/6 md:py-4 py-4 px-3 md:px-0  flex justify-between items-center '>
             <div className='flex items-center space-x-10'>
                 <div>
-                    <img src={logo} alt="logo" />
+                    <img className='md:h-auto md:w-auto w-20' src={logo} alt="logo" />
                 </div>
 
-                <ul className='text-sm flex justify-between items-center space-x-4'>
+                <ul className='text-sm hidden md:flex justify-between items-center space-x-4'>
                     <li>
                         <NavLink>
                             Individual
@@ -46,7 +47,7 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            <div className='flex space-x-4'>
+            <div className='hidden md:flex space-x-4'>
                 <OutlinedButton onClick={handleClick}>
                     Log in
                 </OutlinedButton>
@@ -54,6 +55,10 @@ const Navbar = () => {
                 <FilledButton>
                     Register
                 </FilledButton>
+            </div>
+
+            <div className='md:hidden block'>
+                <img src={listIcon} alt="list icon" />
             </div>
         </nav>
     )

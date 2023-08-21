@@ -9,12 +9,12 @@ import sendArrow from '../assets/send-arrow.svg';
 
 const Footer = () => {
     return (
-        <footer className='mx-auto md:w-5/6 mt-20 py-6 grid grid-cols-6 items-start'>
-            <div className='col-span-2 justify-between space-y-6'>
+        <footer className='mx-auto  mt-20 md:px-6 px-3 md:py-6 py-10 grid grid-cols-5 md:grid md:grid-cols-6 items-start'>
+            <div className='md:col-span-2 col-span-6 md:justify-between md:block flex flex-col items-center justify-center space-y-6'>
                 <img src={logo} alt="logo" />
 
-                <p style={{ color: "#7C7C7C" }} className='text-xs'>
-                    <span>Copyright © 2023 Eazipay.</span><br />
+                <p style={{ color: "#7C7C7C" }} className='text-center md:text-left text-xs'>
+                    <span> Copyright © 2023 Eazipay. </span><br />
                     {" "}
                     <span>All rights reserved</span>
                 </p>
@@ -27,11 +27,11 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='flex col-span-4 justify-between w-full items-start'>
+            <div className='md:flex grid grid-cols-2 text-center md:text-left md:mt-0 mt-10 space-y-4 md:space-y-0 col-span-5 md:col-span-4 justify-between md:w-full items-start'>
                 <div>
-                    <h4 className='font-bold text-xl text-dark'>Product</h4>
+                    <h4 className='font-bold md:text-xl text-lg text-dark'>Product</h4>
 
-                    <ul style={{ color: "#7C7C7C" }} className='text-dark space-y-2 pt-2'>
+                    <ul style={{ color: "#7C7C7C" }} className='text-dark text-sm md:text-base space-y-2 pt-2'>
                         <li>
                             <NavLink to="#">
                                 Individual
@@ -59,9 +59,9 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <h4 className='font-bold text-xl text-dark'>Product</h4>
+                    <h4 className='font-bold md:text-xl text-lg text-dark'>Legal</h4>
 
-                    <ul style={{ color: "#7C7C7C" }} className='text-dark space-y-2 pt-2'>
+                    <ul style={{ color: "#7C7C7C" }} className='text-sm md:text-base text-dark space-y-2 pt-2'>
                         <li>
                             <NavLink to="#">
                                 Privacy Policy
@@ -78,9 +78,9 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <h4 className='font-bold text-xl text-dark'>Resources</h4>
+                    <h4 className='font-bold sm:text-xl text-lg text-dark'>Resources</h4>
 
-                    <ul style={{ color: "#7C7C7C" }} className='text-dark space-y-2 pt-2'>
+                    <ul style={{ color: "#7C7C7C" }} className='text-sm sm:text-base text-dark space-y-2 pt-2'>
                         <li>
                             <NavLink to="#">
                                 FAQs
@@ -108,9 +108,9 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <h4 className='font-bold text-xl text-dark'>Contact us</h4>
+                    <h4 className='font-bold sm:text-xl text-lg text-dark'>Contact us</h4>
 
-                    <ul style={{ color: "#7C7C7C" }} className='text-dark space-y-2 pt-2'>
+                    <ul style={{ color: "#7C7C7C" }} className='text-sm sm:text-base text-dark space-y-2 pt-2'>
                         <li>
                             <NavLink to="#">
                                 eazipay@gmail.com
@@ -127,7 +127,7 @@ const Footer = () => {
                             <input
                                 style={{ background: "#f2f1f1", borderRadius: "16px" }}
                                 type="text"
-                                className='text-dark px-2 py-1.5 text-sm'
+                                className='text-dark w-full sm:w-auto px-2 py-1.5 text-xs sm:text-sm'
                                 placeholder='Your email address'
                             />
 
@@ -137,7 +137,7 @@ const Footer = () => {
                        
                     </ul>
                 </div>
-            </div>
+            </div>       
         </footer>
     )
 }
